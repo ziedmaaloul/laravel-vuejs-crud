@@ -1,0 +1,53 @@
+{
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "rm -rf ../../public/{js,css,img,jsfiles,fonts} && vue-cli-service build --no-clean",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@babel/eslint-parser": "^7.21.3",
+        "axios": "^0.24.0",
+        "bootstrap": "^5.2.3",
+        "bootstrap-vue": "^2.23.1",
+        "core-js": "^3.6.5",
+        "vue": "^2.6.11",
+        "vue-loading-overlay": "3.0",
+        "vue-router": "^3.0.2",
+        "vue-toast-notification": "^0.6.3"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.15",
+        "@vue/cli-plugin-eslint": "~4.5.15",
+        "@vue/cli-plugin-router": "~5.0.0",
+        "@vue/cli-service": "~4.5.15",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "@babel/eslint-parser"
+        },
+        "rules": {
+            "no-unused-vars": "off",
+            "vue/no-mutating-props": "off"
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}
